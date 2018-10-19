@@ -1,0 +1,10 @@
+<MKM version="2.0" imageFileUrl="file:///C:/Users/pc/Desktop/lol/img/login.png">
+  <Marks>
+    <LengthMark direction="3" color="16711680" length="242" x="201" y="13"/>
+    <LengthMark direction="3" color="16711680" length="12" x="313" y="176"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="8684419" offsetX="25" offsetY="10" x="251" y="178"/>
+    <LengthMark direction="3" color="16711680" length="44" x="355" y="210"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="0" offsetX="25" offsetY="10" x="169" y="227"/>
+    <LengthMark direction="3" color="16711680" length="18" x="288" y="223"/>
+  </Marks>
+</MKM>

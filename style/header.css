@@ -1,0 +1,306 @@
+/* 头部样式开始 */
+/* 头部容器 */
+#header{
+    width: 100%;
+    min-width: 1350px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+}
+/* 头部背景图片样式 */
+#header .header-bgimg{
+    width: 1920px;
+    min-width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 0px;  
+    margin-left: -960px;  
+}
+/* 头部导航背景图片样式 */
+#header .header-navimg{
+    width: 100%;
+    height: 131px;
+    background: url('../img/dark-jianbian-repeatx-0.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 头部导航样式 */
+#header .header-navmenu{
+    width: 100%;
+    min-width: 1200px;
+    height: 78px;
+    position: relative;
+    z-index: 2;
+}
+#header .header-navmenu .nav-logo{
+    width: 132px;
+    height: 49px;
+    padding-top: 15px; 
+    margin-left: 5px;
+}
+/* 导航菜单样式 */
+#header .header-navmenu #head-nav{
+    width: 742px;
+    height: 78px;
+    padding-top: 15px;
+    margin-left: 30px;
+}
+#header .header-navmenu #head-nav li{
+    float: left;
+    width: 146px;
+    height: 78px;
+    text-align: center;
+    /* border:1px solid red; */
+}
+#header #head-nav li>.menu-title a{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+#header #head-nav li>.menu-subtitle a{
+    font-size: 11px;
+    color: #A0AEAE;
+}
+/* login登陆信息样式 */
+#header .header-navmenu .login{
+    width: 250px;
+    height: 50px;
+    margin-top: 15px;
+    /* border: 1px solid red; */
+}
+#header .login .icon-radius{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-position: 101px 94px;
+}
+#header .login .icon-radius .headportrait{
+    width: 36px;
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+    left: 6px;
+}
+#header .login .tips-msg{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 10px;
+}
+#header .login .tips-msg>a{
+    color: #FFF3D0;
+}
+/* 掌上联盟手机图标 */
+#header .header-navmenu .icon-phone-btn{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 26px 40px 0 0;
+}
+#header .header-navmenu .icon-phone{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-position: 53px -83px;
+}
+/* 搜索图标 */
+#header .header-navmenu .icon-sreach-btn{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 26px 18px 0 0;
+}
+#header .header-navmenu .icon-sreach{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-position: 25px -38px;
+}
+/* 查看详情 */
+#header .icon-details-btn{
+    width: 160px;
+    height: 40px;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 50%;
+    bottom: 22px;
+    margin-left: -77px; 
+}
+#header .icon-details-btn .icon-details{
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-position: 189px -39px;
+}
+/* 版本信息 */
+#header .edition{
+    /* width: 250px; */
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 13px;
+    bottom: 26px;
+}
+#header .edition span>a{
+    padding: 4px 16px;
+    border: 2px solid;
+    border-top-color: #6C5024;
+    border-left-color: #8D6B2B;
+    border-right-color: #8D6B2B;
+    border-bottom-color: #B78D35;
+    background-color: rgba(0, 0, 0, .5);
+}
+#header .edition span>a:hover{
+    background-color: rgba(0, 0, 0, .9);
+}
+
+
+/* hover显示导航子菜单 */
+#header .head-nav-sub{
+    display: none;
+    width: 100%;
+    min-width: 1350px;
+    height: 360px;
+    padding-top: 92px;
+    position: absolute;
+    top: 0;
+    background: url('../img/dark60-bg-repeat.png') repeat;
+}
+#header .head-nav-sub .head-subnav{
+    width: 742px;
+    height: 260px;   
+    margin-left: 161px;
+    /* 伸缩布局 */
+    display: flex;
+}
+#header .head-nav-sub .head-subnav .submenu{
+    width: 20%;
+}
+#header .head-subnav .submenu>p{
+    text-align: center;
+    line-height: 30px;
+}
+#header .head-subnav .submenu>p a{
+    font-size: 15px;
+}
+#header .head-subnav .submenu>p a:hover{
+    color:#e9c06c;
+}
+/* hover显示掌上联盟二维码 */
+#header .head-nav-qr{
+    display: none;
+    width: 212px;
+    height: 180px;
+    text-align: center;
+    background-position: 0px 0px;
+    position: absolute;
+    top: 67px;
+    right: 211px;
+    /* z-index: 2; */
+}
+#header .head-nav-qr .qrbox{
+    width: 120px;
+    height: 120px; 
+    position: relative;
+    top: 25px;
+}
+#header .head-nav-qr .qrbox .qrcode{
+    width: 110px;
+    height: 110px;
+    border: 6px solid #fff;
+    border-radius: 10px; 
+}
+#header .head-nav-qr .qr-text{
+    padding-top:30px;
+}
+#header .head-nav-qr .polo{
+    position: absolute;
+    right: -6px;
+    bottom: 0px;
+}
+/* hover显示搜索框 */
+#header .head-search{
+    display: none;
+    width: 100%;
+    min-width: 1200px;
+    height: 78px;
+    text-align: center;
+    background-color: #081322;
+    position: relative;
+    z-index: 4;
+}
+#header .head-search .search{
+    width: 30%;
+    height: 28px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: #081322;
+    position: relative;
+    top: 26px;
+    margin-right: 85px;
+}
+#header .head-search .icon-searchbtn{
+    display: block;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-position: 25px -38px;
+    position: absolute;
+    top: 26px;
+    right: 363px;
+}
+#header .head-search .icon-delete{
+    display: block;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-position: 30px -79px;
+    position: absolute;
+    top: 26px;
+    left: 400px;
+}
+/* hover显示登录提示 */
+#header .head-login-msg{
+    display: none;
+    width: 280px;
+    height: 242px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#header .head-login-msg .msg-box{
+    width: 253px;
+    color: #fff;
+    padding: 105px 0 0 21px;
+    margin-bottom: 14px;
+}
+#header .head-login-msg .msg-box>p{
+    color: #848383;
+    line-height: 26px;
+}
+#header .head-login-msg .personal-center{
+    display: inline-block;
+    width: 280px;
+    height: 44px;
+    font-size: 18px;
+    line-height: 44px;
+    background-color: #000000;
+    position: relative;
+}
+#header .head-login-msg .personal-center .ps-arrow{
+    position: absolute;
+    top: 13px;
+    right: 66px;
+}
+#header .head-login-msg .personal-center .ps-arrow:hover{
+    animation: arrowanim 1.5s infinite;
+}
+/* 头部样式结束 */

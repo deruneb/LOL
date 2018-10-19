@@ -1,0 +1,191 @@
+/* 最大宽度 */
+@max-width:1350px;
+/* 最小宽度 */
+@min-width:1350px;
+/* 定义混合 */
+.wrapSize(@width:100%,@min-width:1350px,@height:auto,@margin-b:48px,@display-flex:flex){
+    width: @width;
+    min-width: @min-width;
+    height: @height;
+    margin-bottom: @margin-b;
+    display: @display-flex;
+}
+
+/* 主体版心 */
+#container{
+    width: 100%;
+    max-width: @max-width;
+    min-width: @min-width;
+    height: auto;  
+    margin: 39px auto;
+    //wrapper1 广告新闻样式
+    .wrapper-Msg1{
+        //调用混合样式
+       .wrapSize();
+        //轮播图
+        .carouse{
+            width: 61%;
+            height: 380px;
+	        background-color: #e3e2e2;
+        }
+        //新闻列表
+        .wrap-news-List{
+            width: 39%;
+            height: 380px;
+            margin-left: 35px;
+            //新闻切换菜单盒子样式
+            .news-tab-box{
+                width: auto;
+                height: auto;
+                //新闻菜单
+                .news-menu{
+                    height: 38px;   
+                    border-bottom: 1px solid #E0E2E2;                 
+                    display: flex;
+                    justify-content: space-between;
+                    li{
+                        font-size: 18px;
+                        color: #676767;
+                        text-align: center; 
+                        position: relative; 
+                    }  
+                    //当前菜单样式
+                    & .active{
+                        font-weight: bold;
+                        color:#1DA6BA; 
+                        .line{
+                            width: 100%;
+                            height: 7px;
+                            position: absolute;
+                            top: 34px;
+                            left: 0px;
+                            z-index: 555;
+                            background-position: 119px 0px;          
+                            animation: scalein-2 0.3s          
+                        } 
+                    }
+                }
+                //新闻内容
+                .conts-box{
+                    height: 300px;
+                    .cont{
+                        display: none;
+                        //内容标题
+                        .cont-tit{
+                            height: 60px; 
+                            text-align: center;
+                            line-height: 60px;
+                            // border-bottom: 1px solid #E0E2E2;
+                            background-position: 6px -457px;
+                            .tit{  
+                                font-size: 24px;
+                                color:#1DA6BA;
+                                font-weight: bold;                                
+                            }                                             
+                        }
+                        //内容
+                        li{
+                            height: 39px;
+                            line-height: 39px;
+                            border-bottom: 1px solid #E0E2E2;
+                            a:not(.tit){
+                                display: inline-block;
+                                width: 348px;
+                                font-size: 14px;
+                                color: #424242;
+                            }
+                            //cont 赛事hover效果
+                            .match-txt:hover{
+                                color: #6388C5;
+                            }
+                            //cont 官方hover效果
+                            .official-txt:hover{
+                                color: #C5AB86;
+                            }
+                            //cont 新闻hover效果
+                            .new-txt:hover{
+                                color: #60ADCC;
+                            }
+                            //cont 媒体hover效果
+                            .media-txt:hover{
+                                color: #4ba36a;
+                            }
+                            //内容时间
+                            i{
+                                color: #9DA7BF;
+                                margin-left: 35px;
+                            }
+                        }
+                        // 取消最后一个内容的下边框
+                        & :nth-of-type(7){
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+            //更多信息
+            .more-msg{
+                display: inline-block;
+                width: 100%;
+                height: 42px;
+                font-size: 16px;
+                text-align: center;
+                line-height: 42px;
+                background-color: #E3E2E2;
+                position: relative;
+                span{
+                    color:#7EA1A6;
+                }
+                .ps-arrow{
+                    position: absolute;
+                    top: 11px;
+                    right: 162px;
+                }
+                &:hover{
+                    background-color: #dad8d8;
+                    border-radius: 5px;
+                }
+                &:hover .ps-arrow{
+                    animation: arrowanim 1.5s infinite;
+                }
+            }
+        }
+    }
+    //wrapper2 热门活动
+    .wrapper-hot-activity{
+        //调用混合样式
+        .wrapSize();
+        //热门活动
+        .activity-box{
+            width: 65%;
+            height: 324px;
+	        background-color: #e3e2e2;
+        }
+        //关于游戏
+        .aboutGame{
+            width: 39%;
+            height: 324px;
+            margin-left: 35px;
+            background-color: #4ba36a;
+        }
+    }
+    //wrapper3 产品--改动介绍
+    .wrapper-product-change{
+        //调用混合样式
+        .wrapSize();
+        margin-bottom: 80px;
+        //产品
+        .lol-product{
+            width: 65%;
+            height: 245px;
+	        background-color: #e3e2e2;
+        }
+        //改动
+        .lol-change{
+            width: 39%;
+            height: 245px;
+            margin-left: 35px;
+            background-color: #4ba36a;
+        }
+    }
+}

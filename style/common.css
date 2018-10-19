@@ -1,0 +1,181 @@
+/* 精灵图1 */
+.icon{
+    background-image: url('../img/topfoot-spr.png');
+}
+/* 精灵图2 */
+.icon2{
+    background-image: url('../img/comm-spr.png');
+}
+/* 精灵图3 */
+.icon3{
+    background-image: url('../img/index-spr.png');
+}
+
+/* 左浮动 */
+.fl{
+    float: left;
+}
+
+/* 右浮动 */
+.fr{
+    float: right;
+}
+
+/* 清浮动 */
+.clear:after{
+    width: 0px;
+    height: 0px;
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 字体颜色 */
+.c-gray{
+    color: #888787;
+}
+.c-golden{
+    color: #F5D185;
+}
+.c-black{
+    color: #676767;
+}
+
+/* 字体加粗 */
+.f-wenght{
+    font-weight: bold;
+}
+/* 字体大小 */
+.f-size12{
+    font-size: 12px;
+}
+
+/* 导航子菜单文字前的图标 */
+#header .head-subnav .submenu>p .icon-h{
+    display:inline-block;
+    width: 14px;
+    height: 15px;
+    background-position: 29px -112px;
+    vertical-align: -2px;
+}
+#header .head-subnav .submenu>p .icon-n{
+    display:inline-block;
+    width: 14px;
+    height: 15px;
+    background-position: 48px -112px;
+    vertical-align: -1px;
+}
+
+/* 小箭头图标 */
+.icon-arrow{
+    display: block;
+    width: 16px;
+    height: 15px;
+    background-position: 27px -41px;
+    animation: 1.3s linear infinite;
+}
+
+/*cont 赛事 */
+.match{
+    color: #6388C5;
+    padding: 1px 7px;
+    margin-right: 20px;
+    border: 1px solid #97AFC5;
+}
+
+/*cont 官方 */
+.official{
+    color: #C5AB86;
+    padding: 1px 7px;
+    margin-right: 20px;
+    border: 1px solid #C5AB86;
+}
+
+/*cont 新闻 */
+.new{
+    color: #60ADCC;
+    padding: 1px 7px;
+    margin-right: 20px;
+    border: 1px solid #60ADCC;
+}
+
+/*cont 媒体 */
+.media{
+    color: #4ba36a;
+    padding: 1px 7px;
+    margin-right: 20px;
+    border: 1px solid #4ba36a;
+}
+
+
+
+/* show动画效果关键帧 */
+@keyframes topin {
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes topin {
+    0% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* 自定义调用show动画 */
+.show{
+    display: block!important;
+    -webkit-animation: topin 0.3s;
+}
+
+/* 箭头抖动动画 */
+@keyframes arrowanim {
+
+    0%,
+    54%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    18%,
+    36% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+
+    27% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+}
+
+/* 线条动画 */
+@keyframes scalein-2 {
+    0% {
+        opacity: .5;
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
