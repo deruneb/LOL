@@ -1,42 +1,35 @@
-//引入gulp模块
-var gulp=require("gulp");
-
-//引入path路径系统模块
-var path=require("path");
+//引入gulp
+var gulp = require("gulp");
 
 //引入less编译模块
-var less=require("gulp-less");
+var less = require("gulp-less")
 
-//引入css压缩模块
-var cleanCSS=require("gulp-clean-css");
+//引入path模块
+var path = require("path");
 
-//引入rename重命名模块
-var rename=require("gulp-rename");
+//引入文件监听
+var watch = require("gulp-watch");
 
-//引入热刷新模块
-var livereload=require("gulp-livereload");
+//引入热刷新
+var livereload = require('gulp-livereload');
 
-//配置less任务
-gulp.task("lessTask",function() {
-    //less编译任务的代码
-    gulp.src('./src/less/*.less') //less源文件
-        .pipe(less({
-            paths: [ path.join(__dirname, 'less', 'includes') ]
-        })) //执行less方法编译less和路径的拼接
-        .pipe(cleanCSS({compatibility: 'ie8'}))  //压缩css样式，并兼容IE8
-        .pipe(rename({
-            suffix: ".min", //文件名的后缀
-        }))  //重命名css为.min.css
-        .pipe(gulp.dest('./style')) //css样式的输出路径
-        .pipe(livereload()); //重载
+
+//配置
+gulp.task("lessTest",function(){
+     //JS设置源文件的路径和文件名称--less
+     gulp.src("./src/less/*.less")
+     .pipe(less({
+         paths:[ path.join(__dirname, 'less', 'includes') ]
+     }))
+     //目标文件的路径和文件名
+     .pipe(gulp.dest('./style/'))
+     //启动热刷新
+     .pipe(livereload());
+
 });
-
-//配置默认任务
-gulp.task("default",function () {
-    //开启监听并刷新的任务
+//配置监听
+gulp.task("default",function(){
+    //热刷新
     livereload.listen();
-
-    //配置监视任务的目标和执行的任务名称
-    //语法：gulp.watch('监视的文件', [执行任务的数组]);
-    gulp.watch('./src/less/*.less',["lessTask"]);
-});
+    gulp.watch('./src/less/*.less',["lessTest"])
+})
