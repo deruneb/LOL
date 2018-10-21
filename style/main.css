@@ -1,4 +1,4 @@
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1200px) {
   #container {
     width: 100%;
     max-width: 1350px;
@@ -163,7 +163,7 @@
     background-color: #4ba36a;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   #container {
     width: 100%;
     max-width: 1350px;
@@ -494,6 +494,171 @@
   }
 }
 @media screen and (max-width: 780px) {
+  #container {
+    width: 100%;
+    max-width: 1350px;
+    min-width: 1350px;
+    height: auto;
+    margin: 39px auto;
+  }
+  #container .wrapper-Msg1 {
+    width: 100%;
+    min-width: 1350px;
+    height: auto;
+    margin-bottom: 48px;
+    display: flex;
+  }
+  #container .wrapper-Msg1 .carouse {
+    width: 61%;
+    height: 380px;
+    background-color: #e3e2e2;
+  }
+  #container .wrapper-Msg1 .wrap-news-List {
+    width: 39%;
+    height: 380px;
+    margin-left: 35px;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box {
+    width: auto;
+    height: auto;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .news-menu {
+    height: 38px;
+    border-bottom: 1px solid #E0E2E2;
+    display: flex;
+    justify-content: space-between;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .news-menu li {
+    font-size: 18px;
+    color: #676767;
+    text-align: center;
+    position: relative;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .news-menu .active {
+    font-weight: bold;
+    color: #1DA6BA;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .news-menu .active .line {
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    top: 34px;
+    left: 0px;
+    z-index: 555;
+    background-position: 119px 0px;
+    animation: scalein-2 0.3s;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box {
+    height: 300px;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont {
+    display: none;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont .cont-tit {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-position: 6px -457px;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont .cont-tit .tit {
+    font-size: 24px;
+    color: #1DA6BA;
+    font-weight: bold;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont li {
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #E0E2E2;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont li a:not(.tit) {
+    display: inline-block;
+    width: 348px;
+    font-size: 14px;
+    color: #424242;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont li .match-txt:hover {
+    color: #6388C5;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont li .official-txt:hover {
+    color: #C5AB86;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont li .new-txt:hover {
+    color: #60ADCC;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont li .media-txt:hover {
+    color: #4ba36a;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont li i {
+    color: #9DA7BF;
+    margin-left: 35px;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .news-tab-box .conts-box .cont :nth-of-type(7) {
+    border-bottom: none;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .more-msg {
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 42px;
+    background-color: #E3E2E2;
+    position: relative;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .more-msg span {
+    color: #7EA1A6;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .more-msg .ps-arrow {
+    position: absolute;
+    top: 11px;
+    right: 162px;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .more-msg:hover {
+    background-color: #dad8d8;
+    border-radius: 5px;
+  }
+  #container .wrapper-Msg1 .wrap-news-List .more-msg:hover .ps-arrow {
+    animation: arrowanim 1.5s infinite;
+  }
+  #container .wrapper-hot-activity {
+    width: 100%;
+    min-width: 1350px;
+    height: auto;
+    margin-bottom: 48px;
+    display: flex;
+  }
+  #container .wrapper-hot-activity .activity-box {
+    width: 65%;
+    height: 324px;
+    background-color: #e3e2e2;
+  }
+  #container .wrapper-hot-activity .aboutGame {
+    width: 39%;
+    height: 324px;
+    margin-left: 35px;
+    background-color: #4ba36a;
+  }
+  #container .wrapper-product-change {
+    width: 100%;
+    min-width: 1350px;
+    height: auto;
+    margin-bottom: 48px;
+    display: flex;
+    margin-bottom: 80px;
+  }
+  #container .wrapper-product-change .lol-product {
+    width: 65%;
+    height: 245px;
+    background-color: #e3e2e2;
+  }
+  #container .wrapper-product-change .lol-change {
+    width: 39%;
+    height: 245px;
+    margin-left: 35px;
+    background-color: #4ba36a;
+  }
+}
+@media screen and (max-width: 375px) {
   #container {
     width: 100%;
     max-width: 1350px;

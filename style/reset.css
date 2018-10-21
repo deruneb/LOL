@@ -28,6 +28,8 @@ body{
 	font-family:微软雅黑;
 	font-size:12px;
 	background-color: #eee;
+	width: 100%;
+    min-width: 1350px;
 }
 /* HTML5的部分标签转换为块级 */
 article, aside, details, figcaption, figure, 
